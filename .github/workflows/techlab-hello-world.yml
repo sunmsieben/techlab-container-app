@@ -35,7 +35,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: sieben.azurecr.io/techlab-hello-world:${{ github.sha }}
+          tags: | 
+            sieben.azurecr.io/techlab-hello-world:${{ github.sha }}
+            sieben.azurecr.io/techlab-hello-world:latest
           file: techlab-hello-world/Dockerfile          
 
 
