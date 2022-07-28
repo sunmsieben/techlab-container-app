@@ -7,8 +7,8 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["techlab-container-app.csproj", "techlab-container-app/"]
-RUN dotnet restore "techlab-container-app.csproj"
+COPY ["techlab-container-app/techlab-container-app.csproj", "techlab-container-app/"]
+RUN dotnet restore "techlab-container-app/techlab-container-app.csproj"
 COPY . .
 WORKDIR "/src/techlab-container-app"
 RUN dotnet build "techlab-container-app.csproj" -c Release -o /app/build

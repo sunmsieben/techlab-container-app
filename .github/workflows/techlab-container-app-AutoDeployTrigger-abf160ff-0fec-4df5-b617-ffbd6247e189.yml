@@ -36,8 +36,7 @@ jobs:
         with:
           push: true
           tags: sieben.azurecr.io/techlab-container-app:${{ github.sha }}
-          file: techlab-container-app/Dockerfile
-          context: techlab-container-app/
+          file: techlab-container-app/Dockerfile          
 
 
   deploy:
