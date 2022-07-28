@@ -55,5 +55,5 @@ jobs:
         with:
           inlineScript: |
             az config set extension.use_dynamic_install=yes_without_prompt
-            az containerapp registry set -n techlab-container-app -g techlab-container-app --server sieben.azurecr.io --username  ${{ secrets.TECHLABCONTAINERAPP_REGISTRY_USERNAME }} --password ${{ secrets.TECHLABCONTAINERAPP_REGISTRY_PASSWORD }}
-            az containerapp update -n techlab-container-app -g techlab-container-app --image sieben.azurecr.io/techlab-container-app:${{ github.sha }}
+            az containerapp registry set -n techlab-container-app3 -g techlab-container-app --server sieben.azurecr.io --username  ${{ secrets.TECHLABCONTAINERAPP_REGISTRY_USERNAME }} --password ${{ secrets.TECHLABCONTAINERAPP_REGISTRY_PASSWORD }}
+            az containerapp update -n techlab-container-app3 -g techlab-container-app --image sieben.azurecr.io/techlab-container-app:${{ github.sha }}
