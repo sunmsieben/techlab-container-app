@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "techlab-dapr-console": {
+      "commandName": "Project",
+      "commandLineArgs": "dapr run --app-id techlab-dapr-console dotnet run"
+    }
+  }
+}

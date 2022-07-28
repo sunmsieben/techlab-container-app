@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "techlab-container-app", "techlab-container-app\techlab-container-app.csproj", "{A8774A9A-ADC2-43FF-AA06-9B9FF6BE57B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "techlab-container-app", "techlab-container-app\techlab-container-app.csproj", "{A8774A9A-ADC2-43FF-AA06-9B9FF6BE57B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "techlab-dapr-console", "techlab-dapr-console\techlab-dapr-console.csproj", "{05472F59-6BD2-4745-803F-DBE123E6CEBF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1E12C092-39F1-4DF5-9CF3-0DDD32D8A88E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "techlab-dapr-backend", "techlab-dapr-backend\techlab-dapr-backend.csproj", "{71DEEAB2-5E86-4476-8E29-0A4FA412F517}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "techlab-dapr-frontend", "techlab-dapr-frontend\techlab-dapr-frontend.csproj", "{74D4AB0F-FEA2-4597-9AF1-81E23EEE4D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "techlab-dapr-servicebus", "techlab-dapr-servicebus\techlab-dapr-servicebus.csproj", "{78090273-9C8E-47F1-B0B0-04A3AC60E6D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{A8774A9A-ADC2-43FF-AA06-9B9FF6BE57B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8774A9A-ADC2-43FF-AA06-9B9FF6BE57B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8774A9A-ADC2-43FF-AA06-9B9FF6BE57B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05472F59-6BD2-4745-803F-DBE123E6CEBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05472F59-6BD2-4745-803F-DBE123E6CEBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05472F59-6BD2-4745-803F-DBE123E6CEBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05472F59-6BD2-4745-803F-DBE123E6CEBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E12C092-39F1-4DF5-9CF3-0DDD32D8A88E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E12C092-39F1-4DF5-9CF3-0DDD32D8A88E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E12C092-39F1-4DF5-9CF3-0DDD32D8A88E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E12C092-39F1-4DF5-9CF3-0DDD32D8A88E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71DEEAB2-5E86-4476-8E29-0A4FA412F517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71DEEAB2-5E86-4476-8E29-0A4FA412F517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71DEEAB2-5E86-4476-8E29-0A4FA412F517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71DEEAB2-5E86-4476-8E29-0A4FA412F517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D4AB0F-FEA2-4597-9AF1-81E23EEE4D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D4AB0F-FEA2-4597-9AF1-81E23EEE4D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D4AB0F-FEA2-4597-9AF1-81E23EEE4D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D4AB0F-FEA2-4597-9AF1-81E23EEE4D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78090273-9C8E-47F1-B0B0-04A3AC60E6D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78090273-9C8E-47F1-B0B0-04A3AC60E6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78090273-9C8E-47F1-B0B0-04A3AC60E6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78090273-9C8E-47F1-B0B0-04A3AC60E6D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
