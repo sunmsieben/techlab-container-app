@@ -5,6 +5,9 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
+      - AZURE_CLIENT_ID
+      - AZURE_CLIENT_SECRET
+      - AZURE_TENANT_ID
     ports:
       - "80"
       - "443"
@@ -16,6 +19,9 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
+      - AZURE_CLIENT_ID
+      - AZURE_CLIENT_SECRET
+      - AZURE_TENANT_ID
     ports:
       - "80"
       - "443"

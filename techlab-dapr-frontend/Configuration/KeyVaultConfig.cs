@@ -14,7 +14,9 @@ public static class KeyvaultConfig
 
             var keyVaultUri = $"https://{keyVaultName}.vault.azure.net/";
 
-            builder.AddAzureKeyVault(new Uri(keyVaultUri), new DefaultAzureCredential());
+            var credential = new ChainedTokenCredential(new DefaultAzureCredential(), new EnvironmentCredential());
+
+            builder.AddAzureKeyVault(new Uri(keyVaultUri), credential);
         }
         catch (RequestFailedException rfe)
         {

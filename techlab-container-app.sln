@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "techlab-dapr-backend", "tec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "techlab-dapr-frontend", "techlab-dapr-frontend\techlab-dapr-frontend.csproj", "{74D4AB0F-FEA2-4597-9AF1-81E23EEE4D6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "techlab-dapr-servicebus", "techlab-dapr-servicebus\techlab-dapr-servicebus.csproj", "{78090273-9C8E-47F1-B0B0-04A3AC60E6D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "techlab-dapr-servicebus", "techlab-dapr-servicebus\techlab-dapr-servicebus.csproj", "{78090273-9C8E-47F1-B0B0-04A3AC60E6D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "techlab-container-app-ab", "techlab-container-app-ab\techlab-container-app-ab.csproj", "{48358712-4E5A-4F6C-8194-07848829318B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{78090273-9C8E-47F1-B0B0-04A3AC60E6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78090273-9C8E-47F1-B0B0-04A3AC60E6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78090273-9C8E-47F1-B0B0-04A3AC60E6D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48358712-4E5A-4F6C-8194-07848829318B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48358712-4E5A-4F6C-8194-07848829318B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48358712-4E5A-4F6C-8194-07848829318B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48358712-4E5A-4F6C-8194-07848829318B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

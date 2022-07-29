@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: techlab-dapr-frontend/Dockerfile
     ports:
-      - "53000:50001"
+      - "53000:50001"   
 
   techlab-dapr-frontend-dapr:
     image: "daprio/daprd:latest"
