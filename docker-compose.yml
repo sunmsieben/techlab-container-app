@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: techlab-dapr-frontend/Dockerfile
     ports:
-      - "51000:50001"
+      - "53000:50001"
 
   techlab-dapr-frontend-dapr:
     image: "daprio/daprd:latest"
@@ -22,7 +22,7 @@ services:
       context: .
       dockerfile: techlab-dapr-backend/Dockerfile
     ports:
-      - "52000:50001"
+      - "54000:50001"
 
   techlab-dapr-backend-dapr:
     image: "daprio/daprd:latest"
@@ -30,3 +30,18 @@ services:
     depends_on:
       - techlab-dapr-backend
     network_mode: "service:techlab-dapr-backend"
+  
+  #techlab-dapr-servicebus:
+  #  image: ${DOCKER_REGISTRY-}techlabdaprservicebus
+  #  build:
+  #    context: .
+  #    dockerfile: techlab-dapr-servicebus/Dockerfile  
+  #  ports:
+  #    - "51000:50001"
+
+  #techlab-dapr-servicebus-dapr:
+  #  image: "daprio/daprd:latest"
+  #  command: [ "./daprd", "-app-id", "techlab-dapr-servicebus", "-app-port", "80" ]
+  #  depends_on:
+  #    - techlab-dapr-servicebus
+  #  network_mode: "service:techlab-dapr-servicebus"

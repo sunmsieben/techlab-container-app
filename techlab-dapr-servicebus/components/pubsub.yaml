@@ -1,16 +1,11 @@
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-  name: weather-forecast-pub-sub
-  namespace: default
+  name: servicebus-pubsub
 spec:
-  type: pubsub.redis
+  type: pubsub.azure.servicebus
   version: v1
   metadata:
-    - name: redisHost
-      value: localhost:6379
-    - name: redisPassword
-      value: ''
-scopes:
-  - node-app
-  - dotnet-app
+  - name: connectionString # Required when not using Azure Authentication.
+    value: "Endpoint=sb://techlab-container-app.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=c302TVOZQvslhcWDM4olHVVncW5sKuXFVqXWD4tBUIY="
+    

@@ -6,7 +6,7 @@
     <ProjectGuid>1e12c092-39f1-4df5-9cf3-0ddd32d8a88e</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>techlap-dapr-frontend</DockerServiceName>
+    <DockerServiceName>techlab-dapr-frontend</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
