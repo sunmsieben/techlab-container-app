@@ -7,10 +7,13 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
     private readonly DaprClient _daprClient;
-    public IndexModel(ILogger<IndexModel> logger, DaprClient daprClient)
+    private readonly IConfiguration _configuration;
+
+    public IndexModel(ILogger<IndexModel> logger, DaprClient daprClient, IConfiguration configuration)
     {
         _logger = logger;
         _daprClient = daprClient;
+        _configuration = configuration;
     }
 
     public async Task OnGet()
@@ -22,5 +25,9 @@ public class IndexModel : PageModel
         "cat");
 
         ViewData["catData"] = cats;
+
+        string techlabSecret = _configuration["techlab:secret"];
+
+        ViewData["keyvault"] = techlabSecret;
     }
 }

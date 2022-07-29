@@ -1,8 +1,12 @@
+using Gateways.GatewayApi.DataDelivery.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDaprClient();
 builder.Services.AddRazorPages();
+
+builder.Configuration.AddKeyVault();
 
 var app = builder.Build();
 
