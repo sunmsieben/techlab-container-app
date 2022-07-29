@@ -41,21 +41,21 @@ jobs:
           file: techlab-dapr-frontend/Dockerfile          
 
 
-  # deploy:
-  #   runs-on: ubuntu-latest
-  #   needs: build
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
     
-  #   steps:
-  #     - name: Azure Login
-  #       uses: azure/login@v1
-  #       with:
-  #         creds: ${{ secrets.TECHLABCONTAINERAPP_AZURE_CREDENTIALS }}
+    steps:
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.TECHLABCONTAINERAPP_AZURE_CREDENTIALS }}
 
 
-  #     - name: Deploy to containerapp
-  #       uses: azure/CLI@v1
-  #       with:
-  #         inlineScript: |
-  #           az config set extension.use_dynamic_install=yes_without_prompt
-  #           az containerapp registry set -n techlab-dapr-frontend -g techlab-container-app --server sieben.azurecr.io --username  ${{ secrets.TECHLABCONTAINERAPP_REGISTRY_USERNAME }} --password ${{ secrets.TECHLABCONTAINERAPP_REGISTRY_PASSWORD }}
-  #           az containerapp update -n techlab-dapr-frontend -g techlab-container-app --image sieben.azurecr.io/techlab-dapr-frontend:${{ github.sha }}
+      - name: Deploy to containerapp
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az config set extension.use_dynamic_install=yes_without_prompt
+            az containerapp registry set -n techlab-dapr-frontend -g techlab-container-app --server sieben.azurecr.io --username  ${{ secrets.TECHLABCONTAINERAPP_REGISTRY_USERNAME }} --password ${{ secrets.TECHLABCONTAINERAPP_REGISTRY_PASSWORD }}
+            az containerapp update -n techlab-dapr-frontend -g techlab-container-app --image sieben.azurecr.io/techlab-dapr-frontend:${{ github.sha }}
