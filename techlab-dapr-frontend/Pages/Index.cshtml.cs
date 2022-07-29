@@ -15,12 +15,12 @@ public class IndexModel : PageModel
 
     public async Task OnGet()
     {
-        _logger.LogInformation("Retrieving weatherforcast");
-        var forecasts = await _daprClient.InvokeMethodAsync<IEnumerable<WeatherForecast>>(
+        _logger.LogInformation("Retrieving cats");
+        var cats = await _daprClient.InvokeMethodAsync<IEnumerable<Cat>>(
         HttpMethod.Get,
         "techlab-dapr-backend",
-        "weatherforecast");
+        "cat");
 
-        ViewData["WeatherForecastData"] = forecasts;
+        ViewData["catData"] = cats;
     }
 }
